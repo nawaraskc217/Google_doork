@@ -1,0 +1,82 @@
+"Isha" filetype:pdf OR filetype:xlsx OR filetype:docx
+site:instagram.com intext:u.nawaras
+
+http://eipeos.com/
+Directory Listings
+intitle:"index of /admin"
+intitle:"index of /backup"
+intitle:"index of /passwords"
+Login Pages
+inurl:/login
+inurl:/admin/login
+inurl:/user/login
+Sensitive Information
+filetype:pdf "confidential"
+filetype:xls "username password"
+filetype:doc "sensitive"
+intext:"ssn" filetype:xls
+Database Dumps
+filetype:sql "dump"
+filetype:sql "password"
+filetype:sql "backup"
+Configuration Files
+filetype:xml "confidential"
+filetype:conf "apache"
+filetype:cnf "my.cnf"
+Email Lists
+filetype:xls "email"
+filetype:txt "email list"
+filetype:csv "email"
+Error Messages
+intitle:"index of" "error.log"
+intext:"Fatal error" "database"
+intext:"syntax error"
+Security Vulnerabilities
+inurl:/phpinfo.php
+inurl:wp-config.php
+inurl:phpMyAdmin
+Login Credentials
+filetype:xls "username password"
+filetype:txt "username password"
+filetype:csv "username password"
+Exposed Cameras
+inurl:"/view.shtml"
+inurl:"/view/index.shtml"
+intitle:"Live View / - AXIS"
+Open FTP Servers
+intitle:"index of" inurl:ftp
+intitle:"index of" inurl:pub
+Documents Containing Passwords
+filetype:xls inurl:"password"
+filetype:txt inurl:"password"
+filetype:csv inurl:"password"
+Business Information
+filetype:pdf "business plan"
+filetype:doc "sales forecast"
+filetype:xls "financial statement"
+Other Sensitive Files
+filetype:bak "password"
+filetype:bak "credit card"
+filetype:mdb "password"
+Specific File Types on Sites
+site:example.com filetype:pdf
+site:example.com filetype:doc
+site:example.com filetype:xls
+Searching for Specific Text
+intext:"password" filetype:log
+allintext:"username" "password"
+intext:"sensitive information"
+Discovering Hidden Directories
+intitle:"index of /" "parent directory"
+intitle:"index of /" "backup"
+intitle:"index of /" "config"
+Open Directories
+intitle:"index of" "parent directory"
+intitle:"index of" "files"
+intitle:"index of" "uploads"
+Finding Related Sites
+related:example.com
+Cached Versions
+cache:example.com
+Backlinks
+link:example.com
